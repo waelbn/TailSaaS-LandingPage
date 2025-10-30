@@ -1,4 +1,24 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 
+@theme {
+
+/* ============================== */
+/*        COLOR PALETTE           */
+/* ============================== */
+--color-primary : #C8F37C ;
+--color-secondary: #078659 ;
+--color-color-title:#F3F3F3 ;
+--color-color-body :#EAECEB;
+--color-neutral :#060807 ;
+--color-accent:#111827 ;
+
+/* ============================== */
+/*         Typography             */
+/* ============================== */
+
+--font-heading :"Rubik", "sans-serif";
+--font-body :"Lexend Deca","sans-serif";
+}
 
