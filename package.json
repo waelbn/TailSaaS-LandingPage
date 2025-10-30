@@ -1,0 +1,30 @@
+{
+  "name": "tailsaas-landingpage",
+  "version": "1.0.0",
+  "description": "Saas Landing Page Project html-Css-tailwind",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "tailwindcss -i ./source.css  -o ./styles/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waelbn/TailSaaS-LandingPage.git"
+  },
+  "keywords": [
+    "tailwind",
+    "html",
+    "css",
+    "saas"
+  ],
+  "author": "wael ben nacer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/waelbn/TailSaaS-LandingPage/issues"
+  },
+  "homepage": "https://github.com/waelbn/TailSaaS-LandingPage#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.16",
+    "tailwindcss": "^4.1.16"
+  }
+}
