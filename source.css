@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-
 @theme {
 
 /* ============================== */
@@ -18,8 +17,8 @@
 /*         Typography             */
 /* ============================== */
 
---font-heading :"Rubik", "sans-serif";
---font-body :"Lexend Deca","sans-serif";
+--font-heading :"Rubik",sans-serif;
+--font-body :"Lexend Deca",sans-serif;
 
 /* ============================== */
 /*         Breakpoints            */
@@ -31,5 +30,63 @@
   --breakpoint-xl: 1200px;
   --breakpoint-2xl: 1440px;
   --breakpoint-3xl: 1600px;
+
+
+/* ============================== */
+/*         Animations             */
+/* ============================== */
+
+
+--animate-rotate-border: border-rotate 3s linear infinite ;
+
+@keyframes border-rotate {
+  to {
+    --border-angle : 360deg;
+  }
+  
 }
+
+}
+
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+/* ============================== */
+/*         Components             */
+/* ============================== */
+
+@layer components {
+
+.btn{
+
+  @apply font-body rounded-3xl capitalize;
+}
+
+.btn-primary{
+
+  @apply bg-primary  text-accent;
+}
+
+.btn-secondary-span{
+
+  @apply text-color-body inset-shadow-sm  inset-shadow-white/40 shadow-2xl bg-green-800   ;
+  
+
+}
+
+.btn-secondary{
+@apply bg-conic/[from_var(--border-angle)] from-primary/70  from-40% via-30% to-20% cursor-pointer to-transparent animate-rotate-border  } 
+.btn-sm {
+
+  @apply px-4 py-2 text-sm
+}
+
+
+
+}
+
 
